@@ -1,0 +1,124 @@
+html, body, body nav, body footer{
+    display: flex;
+    justify-content: center;
+}
+html,body,header,p{
+    margin:0px;
+    padding: 0px;
+}
+html,body{
+    box-sizing: border-box;
+    min-height: 100%;
+    font-family: Verdana;
+    font-size: 16px;
+    font-weight: normal;
+    color: black;
+    text-decoration: none;
+    flex-wrap: wrap;
+}
+
+body .header{
+    display: flex;
+    min-width: 100%;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: stretch;
+    padding: 30px;
+}
+
+body .header #tytul{
+    margin-left: 15px;
+    font-weight: bold;
+    font-size: 2em;
+}
+body .header #logo{
+    width: 75px;
+    height: 75px;
+    font-size: xx-large;
+    font-weight: bold;
+    border: 3px solid black;
+    background: lavender;
+    border-radius: 50%;
+    align-self: start;
+}
+body .header .nawigacja{
+    display: flex;
+    flex-grow: 2;
+    justify-content: flex-end;
+    align-self: start;
+}
+body .header .nawigacja .odnosnik{
+    width: 75px;
+}
+body .main-container{
+    display: flex;
+    flex-direction: row;
+    margin: 15px;
+}
+body .main-container .artykul{
+    display: flex;
+    flex-wrap: wrap;
+    margin: 15px;
+    width: 100%;
+    border: 2px solid black;
+    align-items: start;
+    justify-content: flex-end;
+}
+body .main-container .artykul h1{
+    margin: 0px;
+    padding: 10px;
+    font-size: 1.5em;
+    height: .7em;
+    border-left: 2px solid black;
+    border-bottom: 2px solid black;
+    background: lavender;
+    align-items: stretch;
+}
+body .main-container .artykul p{
+    padding: 15px;
+    text-align: justify;
+}
+
+body .footer{
+    display: flex;
+    flex-direction: column;
+    min-height: 50px;
+    width: 100%;
+    height: 100px;
+    background: lavender;
+    border-top: 2px solid black;
+    align-items: center;
+    justify-content: center;
+    margin-top: auto;
+}
+body .footer #stopka{
+    font-weight: bold;
+}
+
+body .header #hamburger{
+    display: none;
+}
+
+@media all and (max-width: 900px) {
+    main{
+        flex-wrap: wrap;
+    }
+    #tytul{
+        display: none;
+    }
+    .odnosnik{
+        display: none;
+    }
+    body .header #hamburger{
+        width: 50px;
+        height: 50px;
+        display: block;
+    }
+    body .header{
+        justify-content: space-between;
+    }
+    body .main-container{
+        flex-wrap: wrap;
+    }
+
+}
